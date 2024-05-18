@@ -1,3 +1,5 @@
+# This is where I got the basics from: https://jvns.ca/blog/2023/11/11/notes-on-nix-flakes/.
+# Scroll down till the word "buildEnv" to find the example this was based on.
 {
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-23.11-darwin";
   outputs = { self, nixpkgs }: {
