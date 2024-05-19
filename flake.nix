@@ -6,8 +6,9 @@
     defaultPackage.aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.buildEnv {
       name = "skean-stuff";
       paths = with nixpkgs.legacyPackages.aarch64-darwin; [
-        python3
+        python312
         gcc
+        bash
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
