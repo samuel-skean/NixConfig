@@ -7,7 +7,6 @@
       name = "skean-stuff";
       paths = with nixpkgs.legacyPackages.aarch64-darwin; [
         python312
-        gcc
         bash
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
