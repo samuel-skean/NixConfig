@@ -8,6 +8,7 @@
       paths = with nixpkgs.legacyPackages.aarch64-darwin; [
         python312
         bash
+        bat
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
