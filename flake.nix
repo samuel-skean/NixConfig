@@ -9,6 +9,8 @@
         python312
         bash
         bat
+        jq
+        jaq
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
