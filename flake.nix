@@ -11,6 +11,7 @@
         bat
         jq
         jaq
+        cmake
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
