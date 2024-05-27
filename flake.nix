@@ -13,6 +13,7 @@
         jaq
         cmake
         inkscape
+        yt-dlp
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
