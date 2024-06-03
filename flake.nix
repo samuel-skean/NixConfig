@@ -14,6 +14,7 @@
         cmake
         inkscape
         yt-dlp
+        python312Packages.flake8
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
