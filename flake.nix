@@ -27,6 +27,7 @@
         python312Packages.flake8
         neovim
         vscode
+        rustup
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
