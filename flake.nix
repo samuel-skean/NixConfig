@@ -2,10 +2,20 @@
 # Scroll down till the word "buildEnv" to find the example this was based on.
 {
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-23.11-darwin";
-  outputs = { self, nixpkgs }: {
-    defaultPackage.aarch64-darwin = nixpkgs.legacyPackages.aarch64-darwin.buildEnv {
+  outputs = { self, nixpkgs }:
+    # This particular way of doing things comes from figsoda's answer
+    # [here](https://discourse.nixos.org/t/allow-unfree-in-flakes/29904). I feel
+    # like I understand it pretty well except Julia Evans's original example
+    # included specifically mentioned `legacyPackages` and I'm not sure how to
+    # keep that, or, for that matter, what it really means.
+    let pkgs = import nixpkgs {
+        system = "aarch64-darwin";
+        config.allowUnfree = true;
+    };
+    in {
+    defaultPackage.aarch64-darwin = pkgs.buildEnv {
       name = "skean-stuff";
-      paths = with nixpkgs.legacyPackages.aarch64-darwin; [
+      paths = with pkgs; [
         python312
         bash
         bat
@@ -15,6 +25,8 @@
         inkscape
         yt-dlp
         python312Packages.flake8
+        neovim
+        vscode
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
