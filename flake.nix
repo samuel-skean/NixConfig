@@ -1,7 +1,7 @@
 # This is where I got the basics from: https://jvns.ca/blog/2023/11/11/notes-on-nix-flakes/.
 # Scroll down till the word "buildEnv" to find the example this was based on.
 {
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-23.11-darwin";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.05-darwin";
   outputs = { self, nixpkgs }:
     # This particular way of doing things comes from figsoda's answer
     # [here](https://discourse.nixos.org/t/allow-unfree-in-flakes/29904). I feel
