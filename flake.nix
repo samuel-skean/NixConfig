@@ -29,6 +29,7 @@
         vscode
         rustup
         _7zz
+        ffmpeg
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
