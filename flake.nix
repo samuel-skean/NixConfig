@@ -17,6 +17,7 @@
       name = "skean-stuff";
       paths = with pkgs; [
         python312
+        python312Packages.pip # invoked with `pip3.12` on my mac
         bash
         bat
         jq
