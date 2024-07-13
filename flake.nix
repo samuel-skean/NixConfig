@@ -31,6 +31,7 @@
         rustup
         _7zz
         ffmpeg
+        poppler_utils
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
