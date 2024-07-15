@@ -32,6 +32,8 @@
         _7zz
         ffmpeg
         poppler_utils
+        exiftool
+        imagemagick
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
