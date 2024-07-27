@@ -34,6 +34,7 @@
         poppler_utils
         exiftool
         imagemagick
+        mdbook
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
