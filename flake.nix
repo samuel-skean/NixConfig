@@ -27,7 +27,6 @@
         yt-dlp
         python312Packages.flake8
         neovim
-        vscode
         rustup
         _7zz
         ffmpeg
@@ -35,6 +34,7 @@
         exiftool
         imagemagick
         mdbook
+        ruby
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
