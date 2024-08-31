@@ -35,6 +35,7 @@
         exiftool
         imagemagick
         mdbook
+        ruby # For CocoaPods, for Flutter
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
