@@ -36,6 +36,7 @@
         imagemagick
         mdbook
         ruby # For CocoaPods, for Flutter
+        git-lfs
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
