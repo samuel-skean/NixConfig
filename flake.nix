@@ -36,7 +36,6 @@
         # PDF tools:
         poppler_utils
         pdftk
-        texliveMedium
         exiftool
         imagemagick
 
