@@ -32,6 +32,7 @@
         _7zz
         ffmpeg
         gawk
+        wget
 
         # PDF tools:
         poppler_utils
