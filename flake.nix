@@ -44,7 +44,6 @@
         ruby # For CocoaPods, for Flutter
         git-lfs
         tree
-        coursier # Installs Scala and Scala-related tools.
       ];
       pathsToLink = [ "/share/man" "/share/doc" "/bin" "/lib" ];
       extraOutputsToInstall = [ "man" "doc" ];
